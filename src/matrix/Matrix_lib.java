@@ -93,7 +93,8 @@ public class Matrix_lib {
 
 	}
 	
-	/*public double [] getSolution(double[][] a, double[] b){
+	/*
+	public double [] getSolution(double[][] a, double[] b){
 		double answer [] = new double [b.length];
 		answer = getProduct(a,b);
 		return answer;
