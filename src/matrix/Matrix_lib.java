@@ -69,7 +69,7 @@ public class Matrix_lib {
 	}
 	public double [][] getInverse(double[][] a){
 		double answer [][] = new double [a.length][a[0].length];
-		double tmp[][] = new double[a.length -1][a[0].length -1];
+		double tmp [][] = new double[a.length -1][a[0].length -1];
 		double determinant = this.getCofactor(a);
 		for(int i = 0; i < a.length; i++) {
 			for(int j = 0; j < a[0].length; j++) {
