@@ -93,13 +93,22 @@ public class Matrix_lib {
 
 	}
 	
-	/*
-	public double [] getSolution(double[][] a, double[] b){
-		double answer [] = new double [b.length];
-		answer = getProduct(a,b);
-		return answer;
+	
+	public double [] getSolution(double[][] d, double[] e){
+		double answer [][] = new double [1][e.length]; //“š‚¦‚Í‚Ps‚S—ñ‚ÅŒ©‚¦‚é‚æ‚¤‚É
+		double tmp [][] = new double [e.length][1]; //e‚Æ“¯‚¶‚Ss‚P—ñ
+		for(int i = 0; i < e.length; i++) {
+			tmp[i][0] = e[i] ;
+		}
+		d = getInverse(d);
+		tmp = getProduct(d,tmp);
+		answer = getTranspose(tmp);
+		for(int i = 0; i < e.length; i++) {
+			e[i] = answer[0][i] ; 
+		}
+		return e;
 	}
-	*/
+	
 }
 
 	
