@@ -60,7 +60,7 @@ public class Matrix_lib {
 					p++;
 					q = 0;
 				}
-				System.out.println("tmp["+i+"] ="+Arrays.deepToString(tmp));
+				//System.out.println("tmp["+i+"] ="+Arrays.deepToString(tmp));
 				cofactor += a[i][index] * Math.pow(-1, ( i + 1 ) + ( index + 1 )) * this.getCofactor(tmp);  
 			}
 		}
